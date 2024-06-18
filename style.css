@@ -1,0 +1,199 @@
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* General Styles */
+.highlight {
+    color: orangered;
+    margin: 0;
+    padding: 0;
+}
+
+.dark {
+    padding: 15px;
+    background-color: #35424a;
+    color: white;
+    margin: 10px 20px;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Header Styles */
+.main header {
+    border-bottom: #e8491d 3px solid;
+}
+
+header .navbar {
+    padding: 20px;
+}
+
+#logocolor {
+    color: coral;
+}
+
+header a:hover {
+    color: #aaaaaa;
+    font-weight: bold;
+}
+
+/* Showcase Styles */
+#showcase {
+    min-height: 400px;
+    background: url("img/컴퓨터_프로그래밍_언어.jpg") no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+#showcase h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Sidebar Styles */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 20px;
+}
+
+/* Boxes */
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+/* Image Styles */
+#html img, #css img, #bootstrap img, #tailwind img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: transf  orm 0.3s;
+}
+
+
+
+#html img:hover, #css img:hover, #bootstrap img:hover, #tailwind img:hover {
+    transform: scale(1.05);
+}
+
+#html img {
+    max-width: 250px;
+}
+
+#css img {
+    max-width: 170px;
+}
+
+#porais {
+    max-width: 400px;
+}
+
+#AI {
+    max-width: 600px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    background-color: #35424a;
+    margin-top: 40px;
+}
+
+/* Team Project Styles */
+.team-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px 0;
+}
+
+.team-container > div {
+    background-color: #f1f1f1;
+    margin: 15px;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+/* About Page Styles */
+.about_container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#about {
+    border-bottom: deepskyblue 3px solid;
+}
+
+.about-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: deepskyblue 3px solid;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Main Column */
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+/* Service List */
+ul#service li {
+    list-style: none;
+    padding: 20px;
+    border: 2px solid #ccccccd6;
+    background-color: #e6e6e6;
+    margin-bottom: 5px;
+}
