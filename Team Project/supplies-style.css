@@ -1,0 +1,96 @@
+
+body {
+  font-family: 'Love Ya Like A Sister', cursive; font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand img {
+    max-width: 100%;
+  }
+  
+  .nav-link {
+    font-size: 1.1em;
+  }
+  
+  hr {
+    margin-top: 0px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .product:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product img {
+    width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .product h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .product p {
+    margin-bottom: 15px;
+  }
+  .product title {
+    font-size: 12px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  #product_1 {
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+  }
+  

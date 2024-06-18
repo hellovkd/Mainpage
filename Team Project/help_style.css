@@ -1,0 +1,130 @@
+
+body {
+    font-family: 'Love Ya Like A Sister', cursive; font-size: 1.1em;
+    background-color: #f8f9fa; 
+    color: #333; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-bottom: 20px;
+  }
+
+.navbar-brand img {
+    max-width: 100%;
+}
+  
+.nav-link {
+    font-size: 1.1em;
+}
+
+
+.main_container {
+    max-width: 800px;
+    margin: 20px auto; 
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.badge {
+    font-size: 0.8em;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545; 
+}
+
+.badge.bg-success {
+    background-color: #198754; 
+}
+
+
+.product-image {
+    width: 100%; 
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+}
+
+
+.description {
+    margin-top: 20px;
+}
+
+.description p {
+    line-height: 1.6; 
+}
+
+
+.options {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.options label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.options select {
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-bottom: 10px; 
+    width: 200px; 
+}
+
+
+
+.total-price {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.total-price .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff; 
+}
+
+
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.buy-btn, .cart-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff; 
+}
+
+.buy-btn {
+    background-color: #007bff; 
+}
+
+.cart-btn {
+    background-color: #28a745; 
+    margin-left: 10px;
+}
+
+.buy-btn:hover, .cart-btn:hover {
+    opacity: 0.8; 
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+  }

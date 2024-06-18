@@ -37,3 +37,4 @@ function addTeamMember() {
     document.getElementById('contact').value = '';
     document.getElementById('reason').value = '';
 }
+

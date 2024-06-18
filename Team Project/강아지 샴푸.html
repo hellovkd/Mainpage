@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강아지 샴푸 </title>
+    <link rel="stylesheet" href="help_style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  </head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-white" style="padding: 0.5%;">
+            <div class="container" style="display: block; text-align: center;">
+                <a class='navbar-brand' href='/'>
+                    <img src="/img/bowdatalogo.jpg" alt="bowdatalogo" width="90">
+                </a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding: 0.2%;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: 'Love Ya Like A Sister', cursive; font-size: 1.1em;">
+                    <ul class="navbar-nav justify-content-center" style="width: 100%;">
+                        <li class="nav-item">
+                            <a aria-current='page' class='nav-link active' href='pedia.html'>Pedia</a> <!-- 견종별 소개 및 특징 설명하는 페이지 -->
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current='page' class='nav-link active' href='data.html'>Data</a> <!-- 강아지 관련 상식 페이지 -->
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current='page' class='nav-link active' href='news.html'>News</a> <!-- 강아지 관련 뉴스 페이지 -->
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current='page' class='nav-link active' href='supplies.html'>Supplies</a> <!-- 강아지 용품 추천 페이지 -->
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current='page' class='nav-link active' href='team.html'>Team</a> <!-- 팀 프로젝트 및 팀원 소개 페이지-->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr style="margin-top: 0px;">
+    </header>
+<div class="main_container">
+    <h1>TS 써니 강아지 샴푸 베이비파우더향, 500g, 1Kg <span class="badge bg-danger">Best</span> </h1>
+    <div class="product-image">
+        <img id="product-image" src="img/강아지샴푸.jpg" class="img-fluid rounded">
+    </div>
+    <div class="description">
+        <p>
+            안심하고 사용할 수 있는 민감한 우리아가 피부를 위한 선택
+            <span id="highlight" style="color: red">
+                이젠 애견샴푸도 TS!</span
+            >
+        </p>
+    </div>
+    <div class="delivery">
+        <p><strong>배송 방법:</strong> 택배</p>
+        <p><strong>배송비:</strong> 무료 (30,000원 이상 무료배송)</p>
+    </div>
+    <div class="options">
+        <label for="number">용량</label>
+        <select id="number">
+            <option value="1">500g </option> 
+            <option value="2">1KG </option>
+        </select>
+        <label for="sum">갯수</label>
+        <select id="sum" onchange="updatePrice_sampe()">
+            <option value="1">1개 </option>
+            <option value="3">3개 </option>
+            <option value="6">6개 </option>
+        </select>
+    </div>
+    <div class="total-price">
+        <span>총 상품금액: </span>
+        <span class="price" id="total-price">19,000원</span>
+    </div>
+    <div class="buttons">
+        <button class="buy-btn" onclick="buyNow()">구매하기</button>
+        <a href="cart.html" class="cart-btn" onclick="addToCart_sampe()">장바구니</a>
+    </div>
+</div>
+<footer>
+    <p>Copyright &copy; 2024, Made by TEAM "Bow Data"<br /></p>
+</footer>
+
+<script>
+function addToCart_sampe() {
+    var number = document.getElementById('number').value;
+    var priceText = document.getElementById('total-price').textContent; 
+    var price = parseInt(priceText.replace(/[^\d]/g, '')); 
+
+    localStorage.setItem('Number_sampe', number);
+    localStorage.setItem('Price_sampe', price);
+
+    console.log('장바구니에 추가됨 - 갯수:', number, '가격:', price);
+    alert('장바구니에 상품이 추가되었습니다.');
+}
+
+
+function updatePrice_sampe() {
+    var number = parseInt(document.getElementById('number').value);
+    var sum = parseInt(document.getElementById('sum').value);
+    var price = 19000; // 기본 가격
+    var total;
+
+    if (number === 1 || sum === 1) {
+        total = price * sum; 
+    } else if (number === 2 || sum === 1) {
+        total = (price * 2) * sum;
+    } else if (number === 1 || sum === 3) {
+        total = price * sum
+    } else if (number === 2 || sum === 3) {
+        total = (price * 2) * sum;
+    } else if (number === 1 || sum === 6) {
+        total = price * sum;
+    } else if (number === 2 || sum === 6) {
+        total = (price * 2) * sum;
+    } 
+
+    document.getElementById('total-price').textContent = total.toLocaleString() + '원';
+}
+
+function buyNow() {
+    var number = document.getElementById('number').value;
+    var priceText = document.getElementById('total-price').textContent;
+    var price = parseInt(priceText.replace(/[^\d]/g, ''));
+
+    localStorage.setItem('Number_sampe', number);
+    localStorage.setItem('Price_sampe', price);
+
+    alert('구매가 완료되었습니다. 총 금액: ' + price.toLocaleString() + '원');
+
+}
+</script>
+
+</body>
+</html>

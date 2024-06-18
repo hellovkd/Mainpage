@@ -1,0 +1,80 @@
+
+body {
+    background-color: #f0f0f0; 
+    font-family: 'Love Ya Like A Sister', cursive; font-size: 1.1em;
+}
+
+
+.card {
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    
+}
+
+
+.card-img {
+    width: 100%; 
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+}
+
+
+.btn {
+    border-radius: 25px; 
+    font-weight: bold; 
+    margin-right: 10px; 
+}
+
+
+.btn-primary {
+    background-color: #ff5e7d; 
+    border-color: #ff5e7d; 
+}
+
+.btn-primary:hover {
+    background-color: #ff3d5e; 
+    border-color: #ff3d5e; 
+}
+
+
+.btn-success {
+    background-color: #4caf50; 
+    border-color: #4caf50; 
+}
+
+.btn-success:hover {
+    background-color: #45a049; 
+    border-color: #45a049; 
+}
+
+.card-text {
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    color: #555; 
+}
+
+.card-title {
+    font-size: 1.5rem; 
+    color: #333; 
+    font-weight: bold; 
+    margin-bottom: 1rem; 
+}
+
+
+h1 {
+    font-size: 2.5rem; 
+    color: #333; 
+    font-weight: bold; 
+    margin-bottom: 2rem; 
+}
+
+.text-center {
+    text-align: center; 
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+  }
