@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-    function renderTimetable() {
+    function newTimetable() {
         timetableBody.innerHTML = '';
         timetable.forEach(row => {
             const tr = document.createElement('tr');
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    renderTimetable();
+    newTimetable();
 
     const form = document.getElementById('timetable-form');
     form.addEventListener('timetable-submit', function(event) {
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const newRow = { time, monday, tuesday, wednesday, thursday, friday };
         timetable.push(newRow);
-        renderTimetable();
+        newTimetable();
 
         form.reset();
     });
